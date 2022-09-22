@@ -1,0 +1,21 @@
+.filters-sort {
+    display: none;
+    label {
+        margin-right: 7px;
+    }
+    select {
+        font-family: Comfortaa;
+        padding: 3px 0;
+    }
+}
+
+@media screen and (max-width: 526px) {
+    .filters-sort {
+        label {
+            font-size: 0.8rem;
+        }
+        select {
+            font-size: 0.8rem;
+        }
+    }
+}

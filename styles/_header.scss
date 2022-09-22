@@ -1,0 +1,23 @@
+.header {
+    background-color: #cf9b63;
+    padding: 0 15px;
+    color: $light-color;
+    &__container {
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 50px;
+    }
+    &__menu {}
+    &__search {}
+}
+
+@media screen and (max-width: 526px) {
+    .header {
+        &__container {
+            flex-direction: column;
+            row-gap: 15px;
+        }
+    }
+}

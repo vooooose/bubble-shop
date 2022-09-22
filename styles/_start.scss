@@ -1,0 +1,10 @@
+#start {
+    @include main-message($dark-color, 1.2rem);
+}
+
+@media screen and (max-width: 450px) {
+    #start {
+        white-space: normal;
+        text-align: center;
+    }
+}

@@ -1,0 +1,70 @@
+.shop-item {
+    width: calc((100% - 3 * 20px) / 4);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    color: $text-color;
+    position: relative;
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+    &__content {
+        padding: 10px 10px 0 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        row-gap: 7px;
+        text-align: center;
+    }
+    &__title {
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+    &__price {
+        font-size: 1.05rem;
+        font-weight: 500;
+    }
+    &__stickers {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    &__pre-order {
+        @include sticker(#db4073);
+    }
+    &__sold-out {
+        @include sticker(#5b19cf);
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .shop-item {
+        width: calc((100% - 2 * 20px) / 3);
+        &__title {
+            font-size: 1rem;
+        }
+        &__price {
+            font-size: 0.98rem;
+        }
+        &__sticker {
+            font-size: 0.75rem;
+        }
+    }
+}
+
+@media screen and (max-width: 526px) {
+    .shop-item {
+        width: calc((100% - 20px) / 2);
+        &__title {
+            font-size: 0.97rem;
+        }
+        &__price {
+            font-size: 0.95rem;
+        }
+    }
+}

@@ -1,0 +1,71 @@
+.сontact-window {
+    position: fixed;
+    right: 83px;
+    bottom: 60px;
+    width: 450px;
+    box-shadow: 0px 0px 24px -7px rgba(66, 68, 90, 1);
+    border-radius: 15px;
+    &__header {
+        border-radius: 15px 15px 0 0;
+        height: 60px;
+        width: 100%;
+        padding: 0 10px;
+        background-color: #aaa3bf;
+        text-align: center;
+        line-height: 60px;
+        color: #faf0e6;
+        font-size: 1.1rem;
+    }
+    &__form {
+        background-color: #fff;
+        border-radius: 0 0 15px 15px;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        label {
+            margin-bottom: 10px;
+        }
+        input,
+        textarea {
+            padding: 10px;
+            border: 1px solid #aaa3bf;
+            font-family: inherit;
+            font-size: 0.9rem;
+            color: $dark-color;
+            &:focus {
+                outline: none;
+            }
+        }
+        input {
+            margin-bottom: 20px;
+        }
+        textarea {
+            height: 100px;
+            margin-bottom: 25px;
+            resize: none;
+            overflow: auto;
+        }
+        button {
+            padding: 15px;
+            width: 90%;
+            margin: 0 auto;
+            background-color: #aaa3bf;
+            color: #faf0e6;
+            font-weight: 500;
+            font-family: inherit;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .сontact-window {
+        right: 5%;
+        bottom: 100px;
+        width: 90%;
+    }
+}

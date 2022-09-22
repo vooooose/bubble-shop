@@ -1,0 +1,24 @@
+.menu {
+    &__items {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+    &__item {
+        font-size: 1.1rem;
+        text-transform: capitalize;
+        transition: color, text-decoration, 0.3s ease 0s;
+        &:hover {
+            color: $dark-color;
+            text-decoration: underline;
+        }
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .menu {
+        &__item {
+            font-size: 0.97rem;
+        }
+    }
+}

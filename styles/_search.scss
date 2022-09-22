@@ -1,0 +1,30 @@
+.search {
+    position: relative;
+    input {
+        padding: 7px;
+        border: 2px solid $dark-color;
+        border-radius: 5px;
+        &:focus {
+            outline-color: #f08b11;
+        }
+        &::placeholder {
+            letter-spacing: 0.01em;
+            opacity: 0.4;
+            font-family: Comfortaa;
+            color: $dark-color;
+        }
+    }
+    button {
+        background: url(../img/icons/search.svg) no-repeat;
+        background-size: cover;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 5px;
+        margin: auto 0;
+        width: 20px;
+        height: 20px;
+        border: none;
+        cursor: pointer;
+    }
+}

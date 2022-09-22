@@ -1,0 +1,23 @@
+@mixin sticker($color) {
+    display: block;
+    z-index: 2;
+    background-color: $color;
+    padding: 4px 10px;
+    color: $light-color;
+    text-align: center;
+    line-height: 1.6em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+@mixin main-message($color, $fz) {
+    color: $color;
+    position: absolute;
+    white-space: nowrap;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+    font-size: $fz;
+}

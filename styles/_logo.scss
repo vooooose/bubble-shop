@@ -1,0 +1,40 @@
+.logo {
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    &__text {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        min-width: 200px;
+        text-align: center;
+    }
+    img {
+        max-width: 110px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .logo {
+        &__text {
+            font-size: 1rem;
+            min-width: 126px;
+        }
+        img {
+            max-width: 80px;
+        }
+    }
+}
+
+@media screen and (max-width: 526px) {
+    .logo {
+        flex-direction: row-reverse;
+        column-gap: 3px;
+        img {
+            max-width: 40px;
+        }
+    }
+}

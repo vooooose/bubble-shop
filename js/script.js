@@ -2,79 +2,79 @@ const items = [{
         title: 'mixtape - stray kids - debut album',
         price: 31.95,
         img: '../img/1.jpg',
-        date: '2018-0-8'
+        date: '2018-01-08'
     },
     {
         title: 'i am not - stray kids - 1st mini album',
         price: 31.95,
         img: '../img/2.jpg',
-        date: '2018-2-26'
+        date: '2018-03-26'
     },
     {
         title: 'i am who - stray kids - 2nd mini album',
         price: 33.95,
         img: '../img/3.jpg',
-        date: '2018-7-6'
+        date: '2018-08-06'
     },
     {
         title: 'i am you - stray kids - 3rd mini album',
         price: 33.95,
         img: '../img/4.jpg',
-        date: '2018-9-22'
+        date: '2018-10-22'
     },
     {
         title: 'clé 1: miroh - stray kids - mini album',
         price: 29.95,
         img: '../img/5.jpg',
-        date: '2019-2-25'
+        date: '2019-03-25'
     },
     {
         title: 'clé 2: yellow wood - stray kids - special album',
         price: 29.95,
         img: '../img/6.jpg',
-        date: '2019-5-19'
+        date: '2019-06-19'
     },
     {
         title: 'clé: levanter - stray kids',
         price: 32.95,
         img: '../img/7.jpg',
-        date: '2019-11-9'
+        date: '2019-12-09'
     },
     {
         title: 'GO生 (go live) - stray kids - 1st studio album',
         price: 38.95,
         img: '../img/8.jpg',
-        date: '2020-5-17'
+        date: '2020-06-17'
     },
     {
         title: 'IN生 (in life) - stray kids - 1st studio album repackage',
         price: 39.95,
         img: '../img/9.jpg',
-        date: '2020-8-14'
+        date: '2020-09-14'
     },
     {
         title: 'noeasy - stray kids - 2nd studio album',
         price: 29.95,
         img: '../img/10.jpg',
-        date: '2021-7-23'
+        date: '2021-08-23'
     },
     {
         title: 'christmas evel (limited ver.) - stray kids - holiday special single',
         price: 33.95,
         img: '../img/11.jpg',
-        date: '2021-10-29'
+        date: '2021-11-29'
     },
     {
         title: 'christmas evel (standard ver.) - stray kids - holiday special single',
         price: 33.95,
         img: '../img/12.jpg',
-        date: '2021-10-29'
+        date: '2021-11-29'
     },
     {
         title: 'oddinary (standard ver.) - stray kids - mini album',
         price: 37.95,
         img: '../img/13.jpg',
-        date: '2022-2-18'
+        date: '2022-03-18'
     },
     {
         title: 'maxident (limited edition go ver.) - stray kids - 7th mini album',
@@ -82,14 +82,14 @@ const items = [{
         img: '../img/14.jpg',
         stickerPreOrder: 'pre-order',
         stickerSoldOut: 'sold-out',
-        date: '2022-9-7'
+        date: '2022-10-07'
     },
     {
         title: 'maxident (standard edition go ver.) - stray kids - 7th mini album',
         price: 35.95,
         img: '../img/15.jpg',
         stickerPreOrder: 'pre-order',
-        date: '2022-9-7'
+        date: '2022-10-07'
     },
 ]
 
@@ -180,11 +180,6 @@ function sortByAlphabet(a, b) {
 
 /////////////////////////////////////////////////////////////////////////
 
-
-/////////////////////////////////////////////////////////////////////////
-
-const sortControl = document.querySelector('#sort');
-
 function sortByDate(a, b) {
     const date1 = new Date(a.date);
     const date2 = new Date(b.date);
@@ -201,6 +196,10 @@ function sortByDate(a, b) {
         return 1;
     }
 }
+
+/////////////////////////////////////////////////////////////////////////
+
+const sortControl = document.querySelector('#sort');
 
 sortControl.addEventListener('change', (event) => {
     const selectedOption = event.target.value;
@@ -269,3 +268,17 @@ contactButton.addEventListener('click', function() {
 })
 
 /////////////////////////////////////////////////////////////////////////
+
+const form = document.forms.form;
+const inputName = form.elements.name;
+const inputEmail = form.elements.email;
+const inputTel = form.elements.tel;
+const formMessage = form.elements.message;
+const formButton = form.elements.button;
+
+formButton.addEventListener('click', function() {
+    inputName.value = '';
+    inputEmail.value = '';
+    inputTel.value = '';
+    formMessage.value = '';
+})

@@ -1,85 +1,85 @@
 const items = [{
         title: 'mixtape - stray kids - debut album',
         price: 31.95,
-        img: '../img/1.jpg',
+        img: './img/1.jpg',
         date: '2018-01-08'
     },
     {
         title: 'i am not - stray kids - 1st mini album',
         price: 31.95,
-        img: '../img/2.jpg',
+        img: './img/2.jpg',
         date: '2018-03-26'
     },
     {
         title: 'i am who - stray kids - 2nd mini album',
         price: 33.95,
-        img: '../img/3.jpg',
+        img: './img/3.jpg',
         date: '2018-08-06'
     },
     {
         title: 'i am you - stray kids - 3rd mini album',
         price: 33.95,
-        img: '../img/4.jpg',
+        img: './img/4.jpg',
         date: '2018-10-22'
     },
     {
         title: 'clé 1: miroh - stray kids - mini album',
         price: 29.95,
-        img: '../img/5.jpg',
+        img: './img/5.jpg',
         date: '2019-03-25'
     },
     {
         title: 'clé 2: yellow wood - stray kids - special album',
         price: 29.95,
-        img: '../img/6.jpg',
+        img: './img/6.jpg',
         date: '2019-06-19'
     },
     {
         title: 'clé: levanter - stray kids',
         price: 32.95,
-        img: '../img/7.jpg',
+        img: './img/7.jpg',
         date: '2019-12-09'
     },
     {
         title: 'GO生 (go live) - stray kids - 1st studio album',
         price: 38.95,
-        img: '../img/8.jpg',
+        img: './img/8.jpg',
         date: '2020-06-17'
     },
     {
         title: 'IN生 (in life) - stray kids - 1st studio album repackage',
         price: 39.95,
-        img: '../img/9.jpg',
+        img: './img/9.jpg',
         date: '2020-09-14'
     },
     {
         title: 'noeasy - stray kids - 2nd studio album',
         price: 29.95,
-        img: '../img/10.jpg',
+        img: './img/10.jpg',
         date: '2021-08-23'
     },
     {
         title: 'christmas evel (limited ver.) - stray kids - holiday special single',
         price: 33.95,
-        img: '../img/11.jpg',
+        img: './img/11.jpg',
         date: '2021-11-29'
     },
     {
         title: 'christmas evel (standard ver.) - stray kids - holiday special single',
         price: 33.95,
-        img: '../img/12.jpg',
+        img: './img/12.jpg',
         date: '2021-11-29'
     },
     {
         title: 'oddinary (standard ver.) - stray kids - mini album',
         price: 37.95,
-        img: '../img/13.jpg',
+        img: './img/13.jpg',
         date: '2022-03-18'
     },
     {
         title: 'maxident (limited edition go ver.) - stray kids - 7th mini album',
         price: 35.95,
-        img: '../img/14.jpg',
+        img: './img/14.jpg',
         stickerPreOrder: 'pre-order',
         stickerSoldOut: 'sold-out',
         date: '2022-10-07'
@@ -87,7 +87,7 @@ const items = [{
     {
         title: 'maxident (standard edition go ver.) - stray kids - 7th mini album',
         price: 35.95,
-        img: '/../img/15.jpg',
+        img: './img/15.jpg',
         stickerPreOrder: 'pre-order',
         date: '2022-10-07'
     },

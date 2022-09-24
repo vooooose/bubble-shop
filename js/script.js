@@ -123,20 +123,20 @@ function prepareShopItem(shopItem) {
     item.querySelector('.shop-item__price').textContent = `${price}$`;
     item.querySelector('img').src = img;
 
-    if ('stickerPreOrder' in shopItem) {
+    function createSticker(sticker, stickerClass) {
         const stickerTemplate = item.querySelector('.shop-item__stickers');
         const element = document.createElement('span');
-        element.classList.add('shop-item__pre-order');
-        element.textContent = stickerPreOrder;
+        element.classList.add(stickerClass);
+        element.textContent = sticker;
         stickerTemplate.append(element);
     }
 
+    if ('stickerPreOrder' in shopItem) {
+        createSticker(stickerPreOrder, 'shop-item__pre-order');
+    }
+
     if ('stickerSoldOut' in shopItem) {
-        const stickerTemplate = item.querySelector('.shop-item__stickers');
-        const element = document.createElement('span');
-        element.classList.add('shop-item__sold-out');
-        element.textContent = stickerSoldOut;
-        stickerTemplate.prepend(element);
+        createSticker(stickerSoldOut, 'shop-item__sold-out');
     }
 
     return item;
@@ -158,7 +158,7 @@ function renderItems(arr) {
     })
 
     if (!arr.length) {
-        nothingFound.textContent = 'Ничего не найдено';
+        nothingFound.textContent = 'Nothing found';
     }
 }
 
@@ -270,15 +270,8 @@ contactButton.addEventListener('click', function() {
 /////////////////////////////////////////////////////////////////////////
 
 const form = document.forms.form;
-const inputName = form.elements.name;
-const inputEmail = form.elements.email;
-const inputTel = form.elements.tel;
-const formMessage = form.elements.message;
 const formButton = form.elements.button;
 
 formButton.addEventListener('click', function() {
-    inputName.value = '';
-    inputEmail.value = '';
-    inputTel.value = '';
-    formMessage.value = '';
+    form.reset();
 })

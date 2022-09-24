@@ -87,7 +87,7 @@ const items = [{
     {
         title: 'maxident (standard edition go ver.) - stray kids - 7th mini album',
         price: 35.95,
-        img: '../img/15.jpg',
+        img: '/../img/15.jpg',
         stickerPreOrder: 'pre-order',
         date: '2022-10-07'
     },
@@ -102,7 +102,7 @@ const filters = document.querySelector('.filters-sort');
 for (let name of sectionTitle) {
     name.addEventListener('click', function() {
         sectionTitleContainer.textContent = name.textContent;
-        renderItems(currentState.sort((a, b) => sortByAlphabet(a, b)));
+        renderItems(items.sort((a, b) => sortByAlphabet(a, b)));
         filters.classList.add('hidden');
     });
 }

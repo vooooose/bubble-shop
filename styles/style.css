@@ -682,8 +682,32 @@ body {
 @media screen and (max-width: 550px) {
   .сontact-window {
     right: 5%;
-    bottom: 100px;
+    bottom: 70px;
     width: 90%;
+  }
+  .сontact-window__header {
+    height: 45px;
+    line-height: 45px;
+    font-size: 1rem;
+  }
+  .сontact-window__form label {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+  }
+  .сontact-window__form input,
+  .сontact-window__form textarea {
+    font-size: 0.8rem;
+  }
+  .сontact-window__form input {
+    margin-bottom: 15px;
+  }
+  .сontact-window__form textarea {
+    height: 80px;
+    margin-bottom: 20px;
+  }
+  .сontact-window__form button {
+    padding: 10px;
+    font-size: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

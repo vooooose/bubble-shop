@@ -115,7 +115,7 @@ const nothingFound = document.querySelector('#nothing-found');
 const start = document.querySelector('#start');
 
 function prepareShopItem(shopItem) {
-    const { title, price, img, stickerPreOrder, stickerSoldOut, date } = shopItem;
+    const { title, price, img, stickerPreOrder, stickerSoldOut } = shopItem;
 
     const item = itemTemplate.content.cloneNode(true);
 
